@@ -19,6 +19,10 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: script
+    scripts:
+      - custom.sh
+
   - type: dnf
     repos:
       copr:
@@ -30,9 +34,9 @@ modules:
         - mc
         - vim
         - bat
-        - gopass     # We'll need this for lab 4
-        - age        # We'll need this for lab 4
-        - chezmoi    # We'll need this for lab 5
+        - gopass # We'll need this for lab 4
+        - age # We'll need this for lab 4
+        - chezmoi # We'll need this for lab 5
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
