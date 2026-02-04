@@ -52,12 +52,7 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
           - org.gnome.Loupe
+          - com.visualstudio.code
       - scope: user # Also add Flathub user repo, but no user packages
-
-  - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - com.visualstudio.code
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
