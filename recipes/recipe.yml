@@ -28,6 +28,8 @@ modules:
         - micro
         - starship
         - mc
+        - vim
+        - bat
         - gopass     # We'll need this for lab 4
         - age        # We'll need this for lab 4
         - chezmoi    # We'll need this for lab 5
